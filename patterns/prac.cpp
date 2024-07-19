@@ -1,45 +1,33 @@
-
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
+
 void nForest(int n) {
-    for (int i = 0; i <= n-2; i++) {
-
-        // for (int i1=n-1; i1>i;i1--){cout<<" ";}
-        // for (int i1=0;i1<i;i1++){cout<<"*";}
-        //left half
-
-        
-        cout<<"*";
-        //middle * only
-
-        for (int i1=0;i1<i;i1++){cout<<"*";}
-        for (int i1=n-1; i1>i;i1--){cout<<" ";}
-        //right half
-
-        cout<<endl;
-        //newline
+    for (int i = 1; i <= n; i++) {
+        if (i % 2 == 0) { // i=2
+            for (int i1 = 1; i1 <= i; i1++) { //i1=1,2
+                if (i1 % 2 == 0) {
+                        cout << "1 ";
+                    
+                } else if (i1 % 2 != 0) {//avoid extra
+                    cout << "0 ";
+                }
+            }
+        } else if (i % 2 != 0) {
+            for (int i1 = 1; i1 <= i; i1++) {
+                if (i1 % 2 == 0) {
+                        cout << "0 ";
+                } else if (i1 % 2 != 0){
+                    cout << "1 ";
+                }
+            }
+        }
+        cout << endl;
     }
-
-    //with biggest line ;)
-    for (int i = 0; i <= n-1; i++) {
-        // for (int i1=0;i1<i;i1++){cout<<" ";}
-        // for (int i1=n-1; i1>i;i1--){cout<<"*";}
-        //left half
-
-        
-        cout<<"*";
-        //middle * only
-        for (int i1=n-1; i1>i;i1--){cout<<"*";}
-        for (int i1=0;i1<i;i1++){cout<<" ";}
-
-        //right half
-
-        cout<<endl;
-        //newline
-    }
-
 }
 
-
-
-int main() {int n;cin >> n;nForest(n);}
+int main() {
+    int n;
+    cin >> n;
+    nForest(n);
+    return 0;
+}

@@ -1,12 +1,37 @@
-********
 # Patterns
-There are 4 general rules for solving a pattern-based question: 
 
-We always use nested loops for printing the patterns. For the outer loop, we count the number of lines/rows and loop for them.
-Next, for the inner loop, we focus on the number of columns and somehow connect them to the rows by forming a logic such that for each row we get the required number of columns to be printed.
-We print the ‘*’ inside the inner loop.
-Observe symmetry in the pattern or check if a pattern is a combination of two or more similar patterns.
-In this particular problem, we run the outer loop for N times since we have N rows to be printed, the inner loop 
+There are 4 general rules for solving a pattern-based question:
+1. We always use nested loops for printing the patterns. For the outer loop, we count the number of lines/rows and loop for them.
+2. Next, for the inner loop, we focus on the number of columns and somehow connect them to the rows by forming a logic such that for each row we get the required number of columns to be printed.
+3. We print the ‘*’ inside the inner loop.
+4. Observe symmetry in the pattern or check if a pattern is a combination of two or more similar patterns.
+
+In this particular problem, we run the outer loop for N times since we have N rows to be printed, the inner loop.
+
+You are better than 100%
+Runtime 14 ms
+
+Use:
+```cpp
+else if (i1 % 2 != 0) { //avoid extra cases }
+```
+
+Start by small and play and debug and debug.
+
+## Table of Contents
+- [Patterns](#patterns)
+  - [Table of Contents](#table-of-contents)
+  - [Pattern-1: Rectangular Star Pattern](#pattern-1-rectangular-star-pattern)
+  - [Pattern-2: Right-Angled Triangle Pattern](#pattern-2-right-angled-triangle-pattern)
+  - [Pattern - 3: Right-Angled Number Pyramid](#pattern---3-right-angled-number-pyramid)
+  - [Pattern - 4: Right-Angled Number Pyramid - II](#pattern---4-right-angled-number-pyramid---ii)
+  - [Pattern-5: Inverted Right Pyramid](#pattern-5-inverted-right-pyramid)
+  - [Pattern - 6: Inverted Numbered Right Pyramid](#pattern---6-inverted-numbered-right-pyramid)
+  - [Pattern - 7: Star Pyramid TO BE REView](#pattern---7-star-pyramid-to-be-review)
+  - [Pattern - 8: Inverted Star Pyramid](#pattern---8-inverted-star-pyramid)
+  - [Pattern - 9: Diamond Star Pattern](#pattern---9-diamond-star-pattern)
+  - [Pattern - 10: Half Diamond Star Pattern](#pattern---10-half-diamond-star-pattern)
+  - [Pattern - 11: Binary Number Triangle Pattern](#pattern---11-binary-number-triangle-pattern)
 
 ## Pattern-1: Rectangular Star Pattern
 ```
@@ -429,24 +454,24 @@ int main() {int n;cin >> n;nForest(n);}
 ```
 Input Format: N = 3
 Result: 
-  *  
-  **
-  ***  
-  **
-  *   
+*  
+**
+***  
+**
+*   
 Input Format: N = 6
 Result:   
-     *
-     **
-     *** 
-     ****
-     *****
-     ******  
-     *****
-     ****
-     ***    
-     **
-     *
+*
+**
+*** 
+****
+*****
+******  
+*****
+****
+***    
+**
+*
 ```
 
 ```
@@ -495,5 +520,71 @@ void nForest(int n) {
 
 
 int main() {int n;cin >> n;nForest(n);}
+```
+
+## Pattern - 11: Binary Number Triangle Pattern
+
+You are better than
+100%
+Runtime
+14 ms
+
+use
+: else if (i1 % 2 != 0) {//avoid extra cases
+
+start by small and play and debug and debug
+
+```
+Input Format: N = 3
+Result: 
+1
+01
+101
+
+Input Format: N = 6
+Result:   
+1
+01
+101
+0101
+10101
+010101
+```
+
+```
+#include <bits/stdc++.h>
+using namespace std;
+
+void nForest(int n) {
+    for (int i = 1; i <= n; i++) {
+        if (i % 2 == 0) { // i=2
+            for (int i1 = 1; i1 <= i; i1++) { //i1=1,2
+                if (i1 % 2 == 0) {
+                        cout << "1 ";
+                    
+                } else if (i1 % 2 != 0) {//avoid extra
+                    cout << "0 ";
+                }
+            }
+        } else if (i % 2 != 0) {
+            for (int i1 = 1; i1 <= i; i1++) {
+                if (i1 % 2 == 0) {
+                        cout << "0 ";
+                } else if (i1 % 2 != 0){
+                    cout << "1 ";
+                }
+            }
+        }
+        cout << endl;
+    }
+}
+
+int main() {
+    int n;
+    cin >> n;
+    nForest(n);
+    return 0;
+}
+
 ```
 
