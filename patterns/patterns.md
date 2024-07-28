@@ -8,23 +8,32 @@
   - [Pattern - 3: Right-Angled Number Pyramid](#pattern---3-right-angled-number-pyramid)
   - [Pattern - 4: Right-Angled Number Pyramid - II](#pattern---4-right-angled-number-pyramid---ii)
   - [Pattern - 5: Inverted Right Pyramid](#pattern---5-inverted-right-pyramid)
-  - [Pattern - 6: Inverted Numbered Right Pyramid](#pattern---6-inverted-numbered-right-pyramid)
-  - [Pattern - 7: Star Pyramid TO BE REView](#pattern---7-star-pyramid-to-be-review)
+  - [\* Pattern - 6: Inverted Numbered Right Pyramid](#-pattern---6-inverted-numbered-right-pyramid)
+  - [\* Pattern - 7: Star Pyramid TO BE REView](#-pattern---7-star-pyramid-to-be-review)
   - [Pattern - 8: Inverted Star Pyramid](#pattern---8-inverted-star-pyramid)
   - [Pattern - 9: Diamond Star Pattern](#pattern---9-diamond-star-pattern)
-  - [Pattern - 10: Half Diamond Star Pattern 000](#pattern---10-half-diamond-star-pattern-000)
-  - [Pattern - 11: Binary Number Triangle Pattern](#pattern---11-binary-number-triangle-pattern)
+  - [\* Pattern - 10: Half Diamond Star Pattern](#-pattern---10-half-diamond-star-pattern)
+  - [\* Pattern - 11: Binary Number Triangle Pattern](#-pattern---11-binary-number-triangle-pattern)
   - [Pattern - 12: Number Crown Pattern](#pattern---12-number-crown-pattern)
   - [Pattern - 13: Increasing Number Triangle Pattern](#pattern---13-increasing-number-triangle-pattern)
-  - [Pattern - 14: Increasing Letter Triangle Pattern](#pattern---14-increasing-letter-triangle-pattern)
+  - [\* Pattern - 14: Increasing Letter Triangle Pattern](#-pattern---14-increasing-letter-triangle-pattern)
   - [Pattern - 15: Reverse Letter Triangle Pattern](#pattern---15-reverse-letter-triangle-pattern)
   - [Pattern - 16: Alpha-Ramp Pattern](#pattern---16-alpha-ramp-pattern)
-  - [Pattern - 17: Alpha-Hill Pattern 000](#pattern---17-alpha-hill-pattern-000)
+  - [\* Pattern - 17: Alpha-Hill Pattern](#-pattern---17-alpha-hill-pattern)
   - [Pattern - 18: Alpha-Triangle Pattern](#pattern---18-alpha-triangle-pattern)
   - [Pattern - 19: Symmetric-Void Pattern](#pattern---19-symmetric-void-pattern)
-  - [Pattern - 20: Symmetric-Butterfly Pattern 000](#pattern---20-symmetric-butterfly-pattern-000)
-  - [Pattern - 21: Hollow Rectangle Pattern 000](#pattern---21-hollow-rectangle-pattern-000)
-  - [Pattern - 22: The Number Pattern 000](#pattern---22-the-number-pattern-000)
+  - [Pattern - 20: Symmetric-Butterfly Pattern](#pattern---20-symmetric-butterfly-pattern)
+  - [\* Pattern - 21: Hollow Rectangle Pattern](#-pattern---21-hollow-rectangle-pattern)
+  - [\* Pattern - 22: The Number Pattern](#-pattern---22-the-number-pattern)
+    - [Context](#context)
+    - [Detailed Explanation](#detailed-explanation)
+      - [Variables](#variables)
+      - [Computation](#computation)
+      - [Subtracting from `n`](#subtracting-from-n)
+    - [Example Walkthrough](#example-walkthrough)
+      - [At position `(0, 0)`:](#at-position-0-0)
+      - [At position `(1, 1)`:](#at-position-1-1)
+      - [At position `(4, 4)` (center):](#at-position-4-4-center)
 
 ## Tips
 For Online contests and compilers,Don't use int main and just use Functions only ;0 .get used to online compilers.
@@ -54,7 +63,7 @@ take care of n=critical points like 1,0 etc
 
 i did every ques 1st by my own.ie.all ;)
 It's a game of How fast you debug ;0
-
+![alt text](image-1.png)
 There are 4 general rules for solving a pattern-based question:
 1. We always use nested loops for printing the patterns. For the outer loop, we count the number of lines/rows and loop for them.
    Outer Loop for Rows/no. of lines
@@ -109,7 +118,7 @@ Output:
 * * * * * *
 ```
 
-```
+```cpp
 //Pattern-1: Rectangular Star Pattern
 
 
@@ -174,7 +183,7 @@ Result:
 * * * * * *
 ```
 
-```
+```cpp
 //Pattern-2: Right-Angled Triangle Pattern
 
 #include<bits/stdc++.h>
@@ -228,7 +237,7 @@ Result:
 1 2 3 4 5 6
 ```
 
-```
+```cpp
 // Pattern - 3: Right-Angled Number Pyramid
 #include<bits/stdc++.h>
 using namespace std;
@@ -261,7 +270,7 @@ Result:
 6 6 6 6 6 6
 ```
 
-```
+```cpp
 // Pattern - 4: Right-Angled Number Pyramid - II
 #include<bits/stdc++.h>
 using namespace std;
@@ -296,8 +305,7 @@ Result:
 * 
 ```
 
-```
-// Pattern - 4: Right-Angled Number Pyramid - II
+```cpp
 #include<bits/stdc++.h>
 using namespace std;
 void nForest(int n) {
@@ -313,7 +321,7 @@ int main() {int n;cin >> n;nForest(n);}
 ```
 [Patterns](#patterns)
 
-## Pattern - 6: Inverted Numbered Right Pyramid
+## * Pattern - 6: Inverted Numbered Right Pyramid
 ```
 Input Format: N = 3
 Result: 
@@ -331,7 +339,7 @@ Result:
 1
 ```
 
-```
+```cpp
 // Pattern - 6: Inverted Numbered Right Pyramid
 #include<bits/stdc++.h>
 using namespace std;
@@ -346,7 +354,7 @@ void nForest(int n) {
 int main() {int n;cin >> n;nForest(n);}
 
 ```
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -385,7 +393,7 @@ int main()
 ```
 [Patterns](#patterns)
 
-## Pattern - 7: Star Pyramid TO BE REView
+## * Pattern - 7: Star Pyramid TO BE REView
 ```
 Input Format: N = 3
 Result: 
@@ -402,7 +410,7 @@ Result:
 ***********
 ```
 
-```
+```cpp
 #include<bits/stdc++.h>
 using namespace std;
 void nForest(int n) {
@@ -429,7 +437,7 @@ void nForest(int n) {
 int main() {int n;cin >> n;nForest(n);}
 ```
 
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -494,7 +502,7 @@ Result:
      *
 ```
 
-```
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -522,7 +530,7 @@ void nForest(int n) {
 int main() {int n;cin >> n;nForest(n);}
 ```
 
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -597,7 +605,7 @@ Result:
      *
 ```
 
-```
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -644,7 +652,7 @@ void nForest(int n) {
 
 int main() {int n;cin >> n;nForest(n);}
 ```
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -724,7 +732,7 @@ int main()
 
 [Patterns](#patterns)
 
-## Pattern - 10: Half Diamond Star Pattern 000
+## * Pattern - 10: Half Diamond Star Pattern 
 ```
 Input Format: N = 3
 Result: 
@@ -748,7 +756,7 @@ Result:
 *
 ```
 
-```
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -795,7 +803,7 @@ void nForest(int n) {
 
 int main() {int n;cin >> n;nForest(n);}
 ```
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -835,7 +843,8 @@ int main()
 ```
 [Patterns](#patterns)
 
-## Pattern - 11: Binary Number Triangle Pattern
+## * Pattern - 11: Binary Number Triangle Pattern
+start = 1-start
 
 You are better than
 100%
@@ -864,7 +873,7 @@ Result:
 010101
 ```
 
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -900,7 +909,7 @@ int main() {
 }
 
 ```
-```
+```cpp
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -918,7 +927,7 @@ int main(){
     return 0;
 }
 ```
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -983,7 +992,7 @@ Result:
 123456654321
 ```
 
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1010,7 +1019,7 @@ int main() {
 
 //code-runner.runInTerminal
 ```
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1080,7 +1089,7 @@ Result:
 16  17  18  19  20  21
 ```
 
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1112,7 +1121,7 @@ int main() {
 ```
 [Patterns](#patterns)
 
-## Pattern - 14: Increasing Letter Triangle Pattern
+## * Pattern - 14: Increasing Letter Triangle Pattern
 
 ```
 Input Format: N = 3
@@ -1131,7 +1140,7 @@ A B C D E
 A B C D E F
 ```
 
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1162,7 +1171,7 @@ int main() {
 ```
 
 ASCII Char Typecast
-```
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -1200,7 +1209,7 @@ A B
 A
 ```
 
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1229,7 +1238,7 @@ int main() {
 
 //code-runner.runInTerminal
 ```
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1284,7 +1293,7 @@ E E E E E
 F F F F F F
 ```
 
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1316,7 +1325,7 @@ int main() {
 
 
 ```
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1355,7 +1364,7 @@ int main()
 ```
 [Patterns](#patterns)
 
-## Pattern - 17: Alpha-Hill Pattern 000
+## * Pattern - 17: Alpha-Hill Pattern 
 ```
 Input Format: N = 3
 Result: 
@@ -1374,7 +1383,7 @@ Result:
 ABCDEFEDCBA
 ```
 
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1419,7 +1428,10 @@ int main() {
 
 //code-runner.runInTerminal
 ```
-```
+![alt text](image-2.png)
+![alt text](image-3.png)
+pattern 7 approach
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1498,7 +1510,7 @@ B C D E F
 A B C D E F
 ```
 
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1540,7 +1552,7 @@ Sample Output 2 :
 A
 ```
 
-```
+```cpp
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -1571,7 +1583,7 @@ int main() {
     return 0;
 }
 ```
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1636,7 +1648,7 @@ Result:
 ************
 ```
 
-```
+```cpp
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -1696,7 +1708,7 @@ int main() {
     return 0;
 }
 ```
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1778,7 +1790,7 @@ int main()
 ```
 [Patterns](#patterns)
 
-## Pattern - 20: Symmetric-Butterfly Pattern 000
+## Pattern - 20: Symmetric-Butterfly Pattern
 ```
 Input Format: N = 3
 Result: 
@@ -1804,7 +1816,7 @@ Result:
 *          *
 ```
 
-```
+```cpp
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -1865,7 +1877,7 @@ int main() {
     return 0;
 }
 ```
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -1923,7 +1935,7 @@ int main()
 
 [Patterns](#patterns)
 
-## Pattern - 21: Hollow Rectangle Pattern 000
+## * Pattern - 21: Hollow Rectangle Pattern
 ```
 Input Format: N = 3
 Result: 
@@ -1941,7 +1953,7 @@ Result:
 ******
 ```
 
-```
+```cpp
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -1974,7 +1986,14 @@ int main() {
     return 0;
 }
 ```
-```
+
+             if(i==0 || j==0 || i==n-1 || j==n-1)
+                cout<<"*";
+                
+             // if not border index, print space.
+             else cout<<" ";
+
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -2016,7 +2035,7 @@ int main()
 
 [Patterns](#patterns)
 
-## Pattern - 22: The Number Pattern 000
+## * Pattern - 22: The Number Pattern 
 combine codes.eg: 4+9 => Q22
 
 Just Break stuff, assign line nos ,see both test cases and make patterns ;0
@@ -2062,7 +2081,7 @@ Result:
 6 6 6 6 6 6 6 6 6 6 6
 ```
 
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 // 6 6 6 6 6 6 6 6 6 6 6 
@@ -2141,7 +2160,65 @@ int main() {
     return 0;
 }
 ```
-```
+
+Sure! Let's break down the line `cout<<(n - min(min(top, bottom), min(left, right)))<<" ";` in the context of the pattern generation function `pattern22`.
+
+### Context
+The function `pattern22` generates a square pattern of size `(2*n - 1) x (2*n - 1)`, with a decreasing sequence of numbers from `n` at the borders to `1` at the center. The line in question is responsible for determining the value to be printed at each position `(i, j)`.
+
+### Detailed Explanation
+
+#### Variables
+1. `i` and `j`: These are the current row and column indices, respectively.
+2. `top`: Represents the row index `i`.
+3. `bottom`: Represents the column index `j`.
+4. `right`: Represents the right distance from the current column index to the end, calculated as `(2*n - 2) - j`.
+5. `left`: Represents the bottom distance from the current row index to the end, calculated as `(2*n - 2) - i`.
+
+#### Computation
+- The function calculates the minimum distance from the current cell `(i, j)` to any of the four borders (top, bottom, left, right).
+- `min(min(top, bottom), min(left, right))`:
+  - `min(top, bottom)`: Finds the smaller of the two distances `top` and `bottom`.
+  - `min(left, right)`: Finds the smaller of the two distances `left` and `right`.
+  - `min(min(top, bottom), min(left, right))`: Finds the smallest distance among the four directions.
+
+#### Subtracting from `n`
+- `n - min(min(top, bottom), min(left, right))`: The minimum distance is subtracted from `n` to generate the desired pattern:
+  - When the cell is at the border (distance 0 from the nearest border), `min(min(top, bottom), min(left, right))` will be 0, and the result will be `n`.
+  - As the distance from the nearest border increases, the value decreases until it reaches the center of the pattern.
+
+### Example Walkthrough
+For `n = 5`, the pattern size is `(2*5 - 1) x (2*5 - 1)`, which is `9 x 9`. 
+
+#### At position `(0, 0)`:
+- `top = 0`
+- `bottom = 0`
+- `right = 8`
+- `left = 8`
+- `min(min(top, bottom), min(left, right)) = min(min(0, 0), min(8, 8)) = min(0, 8) = 0`
+- Value printed: `5 - 0 = 5`
+
+#### At position `(1, 1)`:
+- `top = 1`
+- `bottom = 1`
+- `right = 7`
+- `left = 7`
+- `min(min(top, bottom), min(left, right)) = min(min(1, 1), min(7, 7)) = min(1, 7) = 1`
+- Value printed: `5 - 1 = 4`
+
+#### At position `(4, 4)` (center):
+- `top = 4`
+- `bottom = 4`
+- `right = 4`
+- `left = 4`
+- `min(min(top, bottom), min(left, right)) = min(min(4, 4), min(4, 4)) = min(4, 4) = 4`
+- Value printed: `5 - 4 = 1`
+
+This logic ensures that the numbers decrease symmetrically as you move from the border towards the center of the pattern.
+2n-1 = formula for length sqare of n no.
+![alt text](image-5.png)
+![alt text](image-4.png)
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 

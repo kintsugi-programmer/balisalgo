@@ -1,21 +1,45 @@
-#include <bits/stdc++.h>
 
+#include<bits/stdc++.h>
 using namespace std;
+void nForest(int n) {
+    for (int i = 0; i <= n-2; i++) {
 
-int main(){
-    int t;
-    cin >> t;
-    for(int i=1;i<=t;i++){
-        for(int j=1;j<=i;j++){
-            cout << j;
-        }
-        for(int j=1;j<=(t-i)*2;j++){
-            cout << " ";
-        }
-        for(int j=i;j>=1;j--){
-            cout << j;
-        }
-        cout << "\n";
+        // for (int i1=n-1; i1>i;i1--){cout<<" ";}
+        // for (int i1=0;i1<i;i1++){cout<<"*";}
+        //left half
+
+        
+
+        //middle * only
+
+        for (int i1=0;i1<i;i1++){cout<<"*";}
+        for (int i1=n-1; i1>i;i1--){cout<<" ";}
+        //right half
+
+        cout<<endl;
+        //newline
     }
-    return 0;
+
+    //with biggest line ;)
+    for (int i = 0; i <= n-1; i++) {
+        // for (int i1=0;i1<i;i1++){cout<<" ";}
+        // for (int i1=n-1; i1>i;i1--){cout<<"*";}
+        //left half
+
+        
+
+        //middle * only
+        for (int i1=n-1; i1>i;i1--){cout<<"*";}
+        for (int i1=0;i1<i;i1++){cout<<" ";}
+
+        //right half
+
+        cout<<endl;
+        //newline
+    }
+
 }
+
+
+
+int main() {int n;cin >> n;nForest(n);}
