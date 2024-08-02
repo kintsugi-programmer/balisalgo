@@ -1,9 +1,7 @@
-*****
-# balisalgo
-
-# Index
-- [balisalgo](#balisalgo)
-- [Index](#index)
+# cpp
+## Index
+- [cpp](#cpp)
+  - [Index](#index)
   - [C++ Basic Input/Output](#c-basic-inputoutput)
     - [Including Libraries](#including-libraries)
     - [Skeleton of a C++ Program](#skeleton-of-a-c-program)
