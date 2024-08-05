@@ -1,5 +1,3 @@
-********
-
 # C++ STL
 # Index
 - [C++ STL](#c-stl)

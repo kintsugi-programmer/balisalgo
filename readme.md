@@ -1,36 +1,6 @@
 # balisalgo ;)
 Ek Tuhi Nirankar
 
-/stl/stl.md# Index
-- [C++ STL](/stl/stl.md#c-stl)
-- [Index](/stl/stl.md#index)
-  - [Basics of C++ STL](/stl/stl.md#basics-of-c-stl)
-    - [What is STL?](/stl/stl.md#what-is-stl)
-    - [Why Use STL?](/stl/stl.md#why-use-stl)
-    - [Basic Containers and Their Functions](/stl/stl.md#basic-containers-and-their-functions)
-      - [1. `vector`](/stl/stl.md#1-vector)
-      - [2. `set`](/stl/stl.md#2-set)
-      - [3. `unordered_set`](/stl/stl.md#3-unordered_set)
-      - [4. `map`](/stl/stl.md#4-map)
-    - [Algorithms](/stl/stl.md#algorithms)
-      - [1. `sort()`](/stl/stl.md#1-sort)
-      - [2. `min_element()` and `max_element()`](/stl/stl.md#2-min_element-and-max_element)
-      - [3. `next_permutation()`](/stl/stl.md#3-next_permutation)
-      - [4. `__builtin_popcount()`](/stl/stl.md#4-__builtin_popcount)
-    - [Advanced Concepts](/stl/stl.md#advanced-concepts)
-    - [Advanced Concepts in C++ STL](/stl/stl.md#advanced-concepts-in-c-stl)
-      - [1. Custom Comparators for `set`, `map`, and `sort`](/stl/stl.md#1-custom-comparators-for-set-map-and-sort)
-        - [Custom Comparator for `set` and `map`](/stl/stl.md#custom-comparator-for-set-and-map)
-        - [Custom Comparator for `sort`](/stl/stl.md#custom-comparator-for-sort)
-      - [2. Usage of `priority_queue` for Efficient Priority-Based Data Management](/stl/stl.md#2-usage-of-priority_queue-for-efficient-priority-based-data-management)
-      - [3. Efficient Use of `deque` and `list` for Specific Use Cases](/stl/stl.md#3-efficient-use-of-deque-and-list-for-specific-use-cases)
-        - [`deque`](/stl/stl.md#deque)
-        - [`list`](/stl/stl.md#list)
-      - [4. Understanding and Using `unordered_map`, `unordered_multiset`, and `unordered_multimap` for Average-Case Constant Time Complexity](/stl/stl.md#4-understanding-and-using-unordered_map-unordered_multiset-and-unordered_multimap-for-average-case-constant-time-complexity)
-        - [`unordered_map`](/stl/stl.md#unordered_map)
-        - [`unordered_multiset`](/stl/stl.md#unordered_multiset)
-        - [`unordered_multimap`](/stl/stl.md#unordered_multimap)
-
 /patterns/patterns.md# Patterns
 /patterns/patterns.md#/patterns/patterns.md# Table of Contents
 - [Patterns](/patterns/patterns.md#patterns)
@@ -67,3 +37,55 @@ Ek Tuhi Nirankar
       - [At position `(0, 0)`:](/patterns/patterns.md#at-position-0-0)
       - [At position `(1, 1)`:](/patterns/patterns.md#at-position-1-1)
       - [At position `(4, 4)` (center):](/patterns/patterns.md#at-position-4-4-center)
+
+
+## Tips
+- Don't Dive Deep
+- Think and try brute force and when done and found new at solution ,take notes
+- retry without video
+- Do contests as much as possible even you know to solve 1 problem
+- and no need to do 450 ques,just 300 are fine.also it has depth dsa which almost al l companies lack
+
+## Code Setup
+![alt text](image.png)
+- create input.txt
+- create output.txt
+- create code.cpp
+- .vscode/tasks.json
+  ```
+    {
+      "version": "2.0.0",
+      "tasks": [
+          {
+              "label": "compile",
+              "type": "shell",
+              "command": "g++",
+              "args": [
+                  "-std=c++17",
+                  "-o",
+                  "${fileBasenameNoExtension}",
+                  "${file}"
+              ],
+              "group": {
+                  "kind": "build",
+                  "isDefault": false
+              }
+          },
+          {
+              "label": "compile and run",
+              "type": "shell",
+              "command": "bash",
+              "args": [
+                  "-c",
+                  "g++ -std=c++17 -o ${fileBasenameNoExtension} ${file} && ./${fileBasenameNoExtension} < input.txt > output.txt"
+              ],
+              "group": {
+                  "kind": "build",
+                  "isDefault": true
+              }
+          }
+      ]
+  }
+
+  ```
+  - Ctrl + Shift + B

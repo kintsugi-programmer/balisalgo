@@ -111,6 +111,10 @@ int main() {
 }
 ```
 - **Multiple Inputs**: To accept multiple inputs, we can simply use the >> operator with cin for each variable we want to receive input for. 
+- Inputs can be
+  - 12 13
+  - 12
+    13
 ```cpp
 #include<iostream>
 using namespace std;
@@ -121,6 +125,21 @@ int main() {
     cout << "Value of x: " << x << " and y: " << y;
     return 0;
 }
+```
+
+```
+3 4
+```
+```
+Value of x: 3 and y: 4
+```
+```
+3
+4
+```
+```
+Value of x: 3 and y: 4
+
 ```
 
 ### Including All Standard Libraries
@@ -150,42 +169,46 @@ int main() {
 - **#include<bits/stdc++.h>**: Convenient but may affect compile time.
 
 ## Datatypes
-
 ### Data Types in C++
-1. **Integer (`int`)**:
-   - Used to store whole numbers.
-   - Example: `int x = 10;`
-   - Range: Typically from -2^31 to 2^31-1.
 
-2. **Long (`long`)**:
-   - Used for larger integers.
-   - Example: `long x = 1000000000;`
-   - Range: Typically from -2^63 to 2^63-1.
+1. **Integer (`int`)**:  
+   - Used to store whole numbers.  
+   - Example: `int x = 10;`  
+   - Range: Typically from -2^31 to 2^31-1 (4 bytes, 32 bits).  
 
-3. **Long Long (`long long`)**:
-   - Used for even larger integers.
-   - Example: `long long x = 1000000000000000;`
-   - Range: Typically from -2^63 to 2^63-1.
+2. **Long (`long`)**:  
+   - Used for larger integers.  
+   - Example: `long x = 1000000000;`  
+   - Range: Typically from -2^63 to 2^63-1 (8 bytes, 64 bits).  
 
-4. **Float (`float`)**:
-   - Used to store numbers with decimals.
-   - Example: `float x = 5.6;`
-   - Range: Approximately ±3.4E-38 to ±3.4E+38.
+3. **Long Long (`long long`)**:  
+   - Used for even larger integers.  
+   - Example: `long long x = 1000000000000000;`  
+   - Range: Typically from -2^63 to 2^63-1 (8 bytes, 64 bits).  
 
-5. **Double (`double`)**:
-   - Used for larger floating-point numbers.
-   - Example: `double x = 5.6;`
-   - Range: Approximately ±1.7E-308 to ±1.7E+308.
+4. **Float (`float`)**:  
+   - Used to store numbers with decimals.  
+   - Example: `float x = 5.6;`  
+   - Range: Approximately ±3.4E-38 to ±3.4E+38 (4 bytes, 32 bits).  
 
-6. **String (`string`)**:
-   - Used to store sequences of characters.
-   - Example: `string s = "Hello";`
-   - To read an entire line: `getline(cin, s);`
+5. **Double (`double`)**:  
+   - Used for larger floating-point numbers.  
+   - Example: `double x = 5.6;`  
+   - Range: Approximately ±1.7E-308 to ±1.7E+308 (8 bytes, 64 bits).  
 
-7. **Character (`char`)**:
-   - Used to store single characters.
-   - Example: `char ch = 'A';`
-   - Enclosed in single quotes.
+6. **String (`string`)**:  
+   - Used to store sequences of characters.  
+   - Example: `string s = "Hello";`  
+   - To read an entire line: `getline(cin, s);`  
+   - Size varies based on content; typically uses 1 byte per character.  
+
+7. **Character (`char`)**:  
+   - Used to store single characters.  
+   - Example: `char ch = 'A';`  
+   - Enclosed in single quotes.  
+   - Size: 1 byte (8 bits).  
+
+
 
 ### Input and Output
 - **Reading input**:
@@ -216,7 +239,7 @@ int main() {
 - `long` and `long long` are used when `int` is not sufficient.
 - `float` and `double` are used for floating-point operations.
 - `char` for single characters and `string` for text.
-- `getline(cin, s);` reads the entire line into a string.
+- `getline(cin, str_var);` reads the entire line into a string.
 
 By following these guidelines, you can effectively manage and utilize different data types in your programs.
 Sure, here is a single C++ program that includes examples of all the mentioned data types and concepts:
@@ -280,6 +303,7 @@ int main() {
     // Clear the input buffer before using getline again
     cin.ignore();
 
+    // Full Line String enter
     cout << "Enter a full line of text: ";
     string fullLine;
     getline(cin, fullLine);
@@ -396,6 +420,40 @@ marks
 ```
 
 **Example: Grading Students Based on Marks**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int marks = 54;
+
+    if (marks < 25) {
+        cout << "Grade: F" << endl;
+    } 
+    if (marks >= 25 && marks <= 44) {
+        cout << "Grade: E" << endl;
+    } 
+    if (marks >= 45 && marks <= 49) {
+        cout << "Grade: D" << endl;
+    } 
+    if (marks >= 50 && marks <= 59) {
+        cout << "Grade: C" << endl;
+    } 
+    if (marks >= 60 && marks <= 69) {
+        cout << "Grade: B" << endl;
+    } 
+    if (marks >= 70) {
+        cout << "Grade: A" << endl;
+    } 
+    else {
+        cout << "Invalid marks entered." << endl;
+    }
+
+    return 0;
+}
+```
+- At Above all if block will run
+- Benefit of if else that if one block run then other else/else if blocks are skipped ;0
 
 ```cpp
 #include <iostream>
