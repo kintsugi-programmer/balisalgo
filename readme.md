@@ -1,5 +1,6 @@
 # balisalgo ;)
 Ek Tuhi Nirankar
+![alt text](image-1.png)
 
 /patterns/patterns.md# Patterns
 /patterns/patterns.md#/patterns/patterns.md# Table of Contents

@@ -17,6 +17,7 @@
     - [Key Points](#key-points-1)
     - [Explanation:](#explanation)
   - [If Else Conditional Statements](#if-else-conditional-statements)
+    - [Basic Syntax of Nested if-else](#basic-syntax-of-nested-if-else)
     - [Key Takeaways](#key-takeaways)
   - [Switch Case](#switch-case)
   - [What are arrays, strings?](#what-are-arrays-strings)
@@ -33,6 +34,7 @@
   - [While Loops](#while-loops)
     - [While Loop Basics:](#while-loop-basics)
     - [Example: Calculating Factorial](#example-calculating-factorial)
+    - [Do-While : Run 1 time (even if condition is not true)](#do-while--run-1-time-even-if-condition-is-not-true)
     - [Best Practices and Optimization:](#best-practices-and-optimization)
     - [Example: Using `break` and `continue`](#example-using-break-and-continue)
     - [Summary:](#summary)
@@ -453,7 +455,7 @@ int main() {
 }
 ```
 - At Above all if block will run
-- Benefit of if else that if one block run then other else/else if blocks are skipped ;0
+- Benefit of if else that if one block run then other else/else if blocks are skipped ;0 Like Below
 
 ```cpp
 #include <iostream>
@@ -524,6 +526,27 @@ int main() {
 
 ```
 Grade: C
+```
+
+### Basic Syntax of Nested if-else
+```
+
+if(condition1)
+{
+    // Code to be executed 
+    if(condition2)
+    {
+        // Code to be executed
+    }
+    else
+    {
+         // Code to be executed
+    }
+}
+else
+{
+    // code to be executed
+}
 ```
 
 ### Key Takeaways
@@ -630,9 +653,49 @@ int main() {
 // Output: Thursday
 ```
 
+- **cout<<" INside Check"; is part of switch() {} but when break run whole SWITCH BLOCK SKIPPED ;0**
+  ```cpp
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        int day = 4;
+
+        switch (day) {
+            case 1:
+                cout << "Monday";
+                break;
+            case 2:
+                cout << "Tuesday";
+                break;
+            case 3:
+                cout << "Wednesday";
+                break;
+            case 4:
+                cout << "Thursday";
+                break;
+            case 5:
+                cout << "Friday";
+                break;
+            case 6:
+                cout << "Saturday";
+                break;
+            case 7:
+                cout << "Sunday";
+                break;
+            cout<<" INside Check";
+
+        }
+        cout<<" Check";
+        return 0;
+    }
+
+    // Output: Thursday Check
+
+  ```
 **Key Points:**
 - **Break Statement:** Ensures exit after the matching case, preventing the execution of subsequent cases.
-- **Default Case:** Acts as a safety net if none of the cases match.
+- **Default Case:** Acts as a safety net if none of the cases match.after default you need break to stop statements(non case statements) below it and in switch block 
 
 **3. Requirements:**
 - **Constant Expression:** Switch expression must result in a constant value (including constants and arithmetic operations).
@@ -769,6 +832,11 @@ By understanding these points, you can effectively utilize switch statements for
 
 Sure, here's a simple example that combines both arrays and strings in C++:
 Input
+
+i love it 
+```cpp
+cin >> arr1[0] >> arr1[1] >> arr1[2];
+```
 ```cpp
 #include <iostream>
 #include <string>
@@ -777,6 +845,8 @@ using namespace std;
 int main() {
     // Example of an integer array
     int arr[5] = {3, 4, 5, 7, 2};
+    int arr1[3];
+    cin >> arr1[0] >> arr1[1] >> arr1[2];
 
     // Accessing and printing elements of the array
     cout << "Elements of the integer array: ";
@@ -785,12 +855,21 @@ int main() {
     }
     cout << endl;
 
+    //2D Array
+    int arr2D[2][3] = {{1, 2, 3}, {4, 5, 6}};
+    arr2D[1][2] = 10;
+    cout << "Elements of the 2D integer array: ";
+
     // Modifying an element in the array
     arr[3] += 10;
     cout << "Modified element at index 3: " << arr[3] << endl;
 
     // Example of a string
     string str = "Hello, World!";
+    str[str.size() - 1] = '.';
+
+    // String size
+    int size = str.size();
 
     // Accessing and printing characters of the string
     cout << "Characters of the string: ";
@@ -805,14 +884,14 @@ int main() {
 
     return 0;
 }
-```
+// Input: 1 2 3
 
-Output:
-```
-Elements of the integer array: 3 4 5 7 2 
-Modified element at index 3: 17
-Characters of the string: H e l l o ,   W o r l d ! 
-Modified string: Hello, World!
+// Output
+// Elements of the integer array: 3 4 5 7 2 
+// Elements of the 2D integer array: Modified element at index 3: 17
+// Characters of the string: H e l l o ,   W o r l d . 
+// Modified string: Hello, Eorld.
+
 ```
 
 In this example:
@@ -847,10 +926,42 @@ int main() {
 ```
 Hey, Striver, this is the 1'th iteration
 Hey, Striver, this is the 2'th iteration
-...
-Hey, Striver, this is the 10'th iteration
+Hey, Striver, this is the 3'th iteration
+Hey, Striver, this is the 4'th iteration
+Hey, Striver, this is the 5'th iteration
+Hey, Striver, this is the 6'th iteration
+Hey, Striver, this is the 7'th iteration
+Hey, Striver, this is the 8'th iteration
+Hey, Striver, this is the 9'th iteration
+Hey, Striver, this is the 10'th iteration 
 ```
+Wow Eg :
+```cpp
+#include <iostream>
+using namespace std;
 
+int main() {
+    int i;
+    for (i = 1; i >=-10; i = i-1) {
+        cout << "Hey, Striver, this is the " << i << "'th iteration" << endl;
+    }
+    return 0;
+}
+
+// Hey, Striver, this is the 1'th iteration
+// Hey, Striver, this is the 0'th iteration
+// Hey, Striver, this is the -1'th iteration
+// Hey, Striver, this is the -2'th iteration
+// Hey, Striver, this is the -3'th iteration
+// Hey, Striver, this is the -4'th iteration
+// Hey, Striver, this is the -5'th iteration
+// Hey, Striver, this is the -6'th iteration
+// Hey, Striver, this is the -7'th iteration
+// Hey, Striver, this is the -8'th iteration
+// Hey, Striver, this is the -9'th iteration
+// Hey, Striver, this is the -10'th iteration
+
+```
 ### Nested For Loops:
 - Allows one for loop to be inside another.
 - Useful for iterating through multi-dimensional data structures like 2D arrays.
@@ -928,19 +1039,49 @@ Here are the key points about while loops in programming:
 
 ### Example: Calculating Factorial
 ```cpp
-int n = 5;
-int factorial = 1;
 
-while (n > 0) {
-    factorial *= n;
-    n--;
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 5;
+    int factorial = 1;
+
+    while (n > 0) {
+        factorial *= n;
+        n--;
+    }
+
+    cout << "Factorial of 5 is: " << factorial << endl;
+    return 0;
 }
 
-cout << "Factorial of 5 is: " << factorial << endl;
 ```
 Output:
 ```
 Factorial of 5 is: 120
+```
+
+### Do-While : Run 1 time (even if condition is not true)
+```cpp
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 0;
+
+    do {
+        cout<<"yay";
+    }while (n>0);
+
+
+
+    return 0;
+}
+
+
+// Output: yay
 ```
 
 ### Best Practices and Optimization:
