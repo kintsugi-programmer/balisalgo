@@ -47,6 +47,8 @@
     - [Key Takeaways](#key-takeaways-1)
       - [Code](#code)
 
+[cpp](#cpp)
+
 ## C++ Basic Input/Output
 
 ### Including Libraries
@@ -169,6 +171,7 @@ int main() {
 
 - **using namespace std**: Simplifies code but use cautiously to avoid naming conflicts.
 - **#include<bits/stdc++.h>**: Convenient but may affect compile time.
+[cpp](#cpp)
 
 ## Datatypes
 ### Data Types in C++
@@ -325,6 +328,7 @@ int main() {
 - It demonstrates how to take input and print output for each type.
 - It uses `getline` to read an entire line of text.
 - It includes the necessary `#include` statements and uses the `std` namespace.
+[cpp](#cpp)
 
 ## If Else Conditional Statements
 
@@ -558,6 +562,7 @@ else
 - Refactoring code by simplifying conditions can improve readability and maintainability.
 
 Mastering these basics is crucial for any aspiring programmer to write dynamic and responsive code.
+[cpp](#cpp)
 
 ## Switch Case
 **Switch Case Statements Overview**
@@ -813,6 +818,7 @@ int main() {
 ```
 
 By understanding these points, you can effectively utilize switch statements for specific scenarios, ensuring clean and readable code.
+[cpp](#cpp)
 
 ## What are arrays, strings?
 
@@ -899,6 +905,7 @@ In this example:
 - The string `str` is initialized with a phrase and then characters are accessed and modified.
 
 This demonstrates basic operations with arrays and strings in C++. Let me know if you have any specific questions or if there's anything else you'd like to explore!
+[cpp](#cpp)
 
 ## For loops
 Here are the summarized notes on the for loop in C++:
@@ -1022,6 +1029,7 @@ i = 21
 ```
 
 These notes cover the basics and variations of using for loops in C++. Let me know if there's anything specific you'd like to explore further!
+[cpp](#cpp)
 
 ## While Loops
 Here are the key points about while loops in programming:
@@ -1127,6 +1135,7 @@ Odd number: 9
 
 ### Summary:
 While loops are fundamental for iterating over data and executing code based on specific conditions. They are crucial for controlling flow in algorithms and programs, ensuring efficient execution and preventing infinite loops.
+[cpp](#cpp)
 
 ## Functions
 Certainly! Here are detailed study notes based on the script you provided:
@@ -1214,7 +1223,7 @@ Certainly! Here are detailed study notes based on the script you provided:
 
 
 #### Code
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1286,4 +1295,3 @@ int main() {
     return 0;
 }
 ```
-These notes cover the fundamental concepts of functions, parameter passing methods, and their application in C++. If you have any specific questions or need further explanation on any topic, feel free to ask!

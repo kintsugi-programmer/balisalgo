@@ -1,9 +1,65 @@
 # balisalgo ;)
 Ek Tuhi Nirankar
-![alt text](image-1.png)
 
-/patterns/patterns.md# Patterns
-/patterns/patterns.md#/patterns/patterns.md# Table of Contents
+## Index
+- [balisalgo ;)](#balisalgo-)
+  - [Index](#index)
+- [CPP](#cpp)
+- [Patterns](#patterns)
+  - [Tips](#tips)
+  - [Code Setup](#code-setup)
+
+# CPP
+/cpp/cpp.md
+- [cpp](/cpp/cpp.md#cpp)
+  - [Index](/cpp/cpp.md#index)
+  - [C++ Basic Input/Output](/cpp/cpp.md#c-basic-inputoutput)
+    - [Including Libraries](/cpp/cpp.md#including-libraries)
+    - [Skeleton of a C++ Program](/cpp/cpp.md#skeleton-of-a-c-program)
+    - [Output with `cout`](/cpp/cpp.md#output-with-cout)
+    - [Input with `cin`](/cpp/cpp.md#input-with-cin)
+    - [Including All Standard Libraries](/cpp/cpp.md#including-all-standard-libraries)
+    - [Key Points](/cpp/cpp.md#key-points)
+  - [Datatypes](/cpp/cpp.md#datatypes)
+    - [Data Types in C++](/cpp/cpp.md#data-types-in-c)
+    - [Input and Output](/cpp/cpp.md#input-and-output)
+    - [Comments](/cpp/cpp.md#comments)
+    - [Memory Usage](/cpp/cpp.md#memory-usage)
+    - [Key Points](/cpp/cpp.md#key-points-1)
+    - [Explanation:](/cpp/cpp.md#explanation)
+  - [If Else Conditional Statements](/cpp/cpp.md#if-else-conditional-statements)
+    - [Basic Syntax of Nested if-else](/cpp/cpp.md#basic-syntax-of-nested-if-else)
+    - [Key Takeaways](/cpp/cpp.md#key-takeaways)
+  - [Switch Case](/cpp/cpp.md#switch-case)
+  - [What are arrays, strings?](/cpp/cpp.md#what-are-arrays-strings)
+    - [Arrays:](/cpp/cpp.md#arrays)
+    - [Strings:](/cpp/cpp.md#strings)
+  - [For loops](/cpp/cpp.md#for-loops)
+    - [For Loop Overview:](/cpp/cpp.md#for-loop-overview)
+    - [Example:](/cpp/cpp.md#example)
+    - [Nested For Loops:](/cpp/cpp.md#nested-for-loops)
+    - [Example:](/cpp/cpp.md#example-1)
+    - [Conditionals Inside For Loops:](/cpp/cpp.md#conditionals-inside-for-loops)
+    - [Customizing For Loops:](/cpp/cpp.md#customizing-for-loops)
+    - [Example:](/cpp/cpp.md#example-2)
+  - [While Loops](/cpp/cpp.md#while-loops)
+    - [While Loop Basics:](/cpp/cpp.md#while-loop-basics)
+    - [Example: Calculating Factorial](/cpp/cpp.md#example-calculating-factorial)
+    - [Do-While : Run 1 time (even if condition is not true)](/cpp/cpp.md#do-while--run-1-time-even-if-condition-is-not-true)
+    - [Best Practices and Optimization:](/cpp/cpp.md#best-practices-and-optimization)
+    - [Example: Using `break` and `continue`](/cpp/cpp.md#example-using-break-and-continue)
+    - [Summary:](/cpp/cpp.md#summary)
+  - [Functions](/cpp/cpp.md#functions)
+    - [Functions in C++](/cpp/cpp.md#functions-in-c)
+      - [What are Functions?](/cpp/cpp.md#what-are-functions)
+      - [Types of Functions](/cpp/cpp.md#types-of-functions)
+      - [Passing Parameters](/cpp/cpp.md#passing-parameters)
+      - [Arrays and Functions](/cpp/cpp.md#arrays-and-functions)
+    - [Key Takeaways](/cpp/cpp.md#key-takeaways-1)
+      - [Code](/cpp/cpp.md#code)
+
+# Patterns
+/patterns/patterns.md
 - [Patterns](/patterns/patterns.md#patterns)
   - [Table of Contents](/patterns/patterns.md#table-of-contents)
   - [Tips](/patterns/patterns.md#tips)
@@ -53,7 +109,7 @@ Ek Tuhi Nirankar
 - create output.txt
 - create code.cpp
 - .vscode/tasks.json
-  ```
+  ```json
     {
       "version": "2.0.0",
       "tasks": [
@@ -90,3 +146,6 @@ Ek Tuhi Nirankar
 
   ```
   - Ctrl + Shift + B
+![alt text](image-1.png)
+
+Good Luck !!
