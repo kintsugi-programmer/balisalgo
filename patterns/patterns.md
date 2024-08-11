@@ -2264,3 +2264,6 @@ int main()
 ```
 Done ;0
 [Patterns](#patterns)
+
+
+
