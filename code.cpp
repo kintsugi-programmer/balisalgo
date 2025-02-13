@@ -52,22 +52,77 @@ int main(){
     */
 
 
-   // Datatypes (inbuilt)
-   // Declare ways
-   // datatype var_name,var_name2,etc;
-   // datatype var_name= value;
+    // Datatypes (inbuilt)
+    // Declare ways
+    // datatype var_name,var_name2,etc;
+    // datatype var_name= value;
 
-   int x1;      //int 4bytes
-   long x2;     //long (unsigned short 2bytes, long 4bytes, unsigned long 4bytes)
-   long long x3; //long long 8bytes
-   float x4;    //float 4bytes
-   double x5;   //double 8bytes
-   // they all have simple cin,cout
+    int x0;      //int 4bytes
+    short x1;    //short 2 bytes
+    long x2;     //long (unsigned short 2bytes, long 4bytes, unsigned long 4bytes)
+    long long x3; //long long 8bytes
+    float x4;    //float 4bytes
+    double x5;   //double 8bytes
+    // they all have simple cin,cout
 
-   string x6,x7,x8;// String
-   cin>> x6 >> x7; //input till space "hi bali"
-   getline(cin,x8); //input string till linebreak 
-   
+    string x6,x7,x8;// String dynamic storage ,overhaead 32bytes(x64bit systems)
+    cin>> x6 >> x7; //input till space
+    getline(cin,x8); //input string till linebreak 
+
+    char x9; // char 1byte
+    // total char = 256
+
+    // difference b/w string "" and char ''
+    string x10="hi"; //value store in double quotes
+    char x11='h'; // value store in single quotes
+
+    bool x12=true;  //bool 1byte
+
+    //sizeof() :show size of any datatype
+    cout<<"Size of Int:"<<sizeof(int)<<"bytes\n";
+
+    //conditional statements
+    // if else
+    if(12<16) cout<<"12<16"<<endl;
+    if(12<16) // will work even above true
+        cout<<"12<16"<<endl;
+    if(12<15) {
+        cout<<"12<15"<<endl;
+        }
+    if(1==2){
+        if(2==3) {
+            cout<<"1==2==3";
+        }
+    }
+    
+    int x13=10,x14=20;
+    if (x13<=14) cout<<x13<<endl;
+    else if (x14) cout<<x14<<endl;//will work only if above fails
+    else cout<<"else";
+
+    /*
+    Multiple condition statements
+    &   AND
+    ||  OR
+    !   NOT
+    */
+
+   // Switch case statements
+   char x15;
+   cin>>x15;
+   switch(x15){
+        case 'a':
+            cout<<"You wrote"<<x15<<endl;
+            break;
+
+        
+
+   }
+
+
+
+
+
 
 
  
